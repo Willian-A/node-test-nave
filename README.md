@@ -1,1 +1,25 @@
-# node-test-nave
+# Teste Backend Nave.rs
+
+### Como preparar o ambiente:
+  * **Os Aruqivos Database.sq, Insomnia.json e Insomnia.yaml se encontram no diretorio _Ambiente_**
+  1. Importar o arquivo Database.sql para a criação do Banco de Dados e suas Tabelas no MySQL.
+      1.  _Configurar as variaveis **HOST, USER, PASSWORD e DB_NAME** no arquivo **.env** para as configurações do seu Banco de Dados MySQL._
+  3. Importar o arquivo Insomnia.json ou Insomnia.yaml no Insomnia para a criação das Rotas e suas documentações.
+  4. Executar o comando _**npm install**_ no diretorio principal para a instalação dos modulos necessarios na execução do App.
+### Como fazer os testes no Insomnia:
+  1. Cadastre um novo Usuario na rota Users/singup
+  2. Faça o login como Usuario na rota Users/login
+  * **OBS:** _Um Naver pode ser Cadastrado com ou sem Projetos, porém, caso queria cadastrar ele com Projetos, 
+  é necessario cadastrar esse Projeto antes de cadastrar o Naver. Seguirei a Documentação presumindo que deseje cadastrar o Naver com Projetos.
+  Caso não deseje cadastrar o Naver com algum Projeto, ignore a instrução **3** mas tenha em mente que não podera testar todas as rotas._ 
+  3. Cadastre um novo Projeto na rota Projetos/store.
+  4. Cadastre um novo Naver na rota Navers/store.
+  * Agora, você tem tudo o que precisa para testar as rotas **Index, Show, Update e Delete** dos _Projetos_ e _Navers_.
+    * **_A documentação de cada Rota está no proprio Insomnia, caso tenha algum problema entre em contato._**
+
+### Dificuldades 
+  Desenvolver o Upadate dos Projetos de cada Naver. Modificar o Projeto em que aquele Naver está foi um problema o qual não consegui solucionar. 
+  Um Naver pode estar em _**N**_ Projetos, o código começou a ficar muito extenso e complexo o que começou a causar uma confusão na lógica e quebrar o resto do projeto.
+  Por causa dessa dificuldade, fiquei muito tempo tentando resolver o problema e acabei não tendo tempo para fazer a relação de Navers e Usuario 
+  onde um Naver só pode ser modificado pelo Usuario que criou ele, mas isso seria feito de forma parecida com a implementação de relação entre Naver e Projeto feita
+  no MySQL.
