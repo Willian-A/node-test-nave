@@ -1,9 +1,10 @@
 # Teste Backend Nave.rs
 
 ### Como preparar o ambiente:
+  * **Os Aruqivos Database.sq, Insomnia.json e Insomnia.yaml se encontram na pasta _Ambiente_**
   1. Importar o arquivo Database.sql para a criação do Banco de Dados e suas Tabelas no MySQL.
       1.  _Configurar as variaveis **HOST, USER, PASSWORD e DB_NAME** no arquivo **.env** para as configurações do seu Banco de Dados MySQL._
-  3. Importar o arquivo Insomnia.json no Insomnia para a criação das Rotas e suas documentações.
+  3. Importar o arquivo Insomnia.json ou Insomnia.yaml no Insomnia para a criação das Rotas e suas documentações.
 ### Como fazer os testes no Insomnia:
   1. Cadastre um novo Usuario na rota Users/singup
   2. Faça o login como Usuario na rota Users/login
