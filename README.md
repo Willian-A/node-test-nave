@@ -6,6 +6,7 @@
       1.  _Configurar as variaveis **HOST, USER, PASSWORD e DB_NAME** no arquivo **.env** para as configurações do seu Banco de Dados MySQL._
   3. Importar o arquivo Insomnia.json ou Insomnia.yaml no Insomnia para a criação das Rotas e suas documentações.
   4. Executar o comando _**npm install**_ no diretorio principal para a instalação dos modulos necessarios na execução do App.
+  5. Executar o comando  _**npm run start**_ ou  _**node App.js**_ para iniciar o Sistema.
 ### Como fazer os testes no Insomnia:
   1. Cadastre um novo Usuario na rota Users/singup
   2. Faça o login como Usuario na rota Users/login
