@@ -67,7 +67,7 @@ module.exports.deleteProjeto = (application, req, res) => {
     // Se não existir, retorna um erro
     ProjetoModel.getProjetoByID(req.params.id).then((result) => {
         if (result.length >= 1) {
-            ProjetosModel.deleteProjetoNaver(req.params.id);
+            ProjetoModel.deleteProjetoNaverByProjeto(req.params.id);
             ProjetoModel.deleteProjeto(req.params.id).then(() => res.sendStatus(200));
         } else {
             res.status(404).send("Este projeto não existe");

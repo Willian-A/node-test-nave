@@ -105,7 +105,6 @@ class ProjetoDAO {
     };
 
     createProjetoNaver = (values) => {
-        console.log(values);
         return new Promise((resolve, reject) => {
             this._conn.query("INSERT INTO projetos_navers SET ?",
                 values, (err, result) => {
@@ -117,9 +116,21 @@ class ProjetoDAO {
         })
     };
 
-    deleteProjetoNaver = (values) => {
+    deleteProjetoNaverByNaver = (values) => {
         return new Promise((resolve, reject) => {
             this._conn.query("DELETE FROM projetos_navers WHERE id_naver = ?",
+                values, (err, result) => {
+                    if (err) {
+                        return reject(err);
+                    }
+                    resolve(result);
+                });
+        })
+    };
+
+    deleteProjetoNaverByProjeto = (values) => {
+        return new Promise((resolve, reject) => {
+            this._conn.query("DELETE FROM projetos_navers WHERE id_projeto = ?",
                 values, (err, result) => {
                     if (err) {
                         return reject(err);

@@ -109,7 +109,7 @@ module.exports.deleteNaver = (application, req, res) => {
         if (result.length >= 1) {
             ProjetosModel.getProjetoNaverByNaverID(req.params.id).then((result) => {
                 if (result.length >= 1) {
-                    ProjetosModel.deleteProjetoNaver(req.params.id);
+                    ProjetosModel.deleteProjetoNaverByNaver(req.params.id);
                     NaverModel.deleteNaver(req.params.id);
                 } else {
                     NaverModel.deleteNaver(req.params.id);
