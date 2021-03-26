@@ -11,3 +11,10 @@
   3. Cadastre um novo Projeto na rota Projetos/store.
   4. Cadastre um novo Naver na rota Navers/store.
   * Agora, você tem tudo o que precisa para testar as rotas **Index, Show, Update e Delete**.
+
+### Dificuldades 
+  Desenvolver o Upadate dos Projetos de cada Naver. Modificar o Projeto em que aquele Naver está foi um problema o qual não consegui solucionar. 
+  Um Naver pode estar em _**N**_ Projetos, o código começou a ficar muito extenso e complexo o que começou a causar uma confusão na lógica e quebrar o resto do projeto.
+  Por causa dessa dificuldade, fiquei muito tempo tentando resolver o problema e acabei não tendo tempo para fazer a relação de Navers e Usuario 
+  onde um Naver só pode ser modificado pelo Usuario que criou ele, mas isso seria feito de forma parecida com a implementação de relação entre Naver e Projeto feita
+  no MySQL.
