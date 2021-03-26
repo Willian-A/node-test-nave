@@ -1,0 +1,511 @@
+_type: export
+__export_format: 4
+__export_date: 2021-03-26T19:36:39.840Z
+__export_source: insomnia.desktop.app:v2021.2.1
+resources:
+  - _id: req_0005df4a722c4d3f8df98d624e8ed7a9
+    parentId: fld_28c9d31e596f4f82b622077d53fce2c6
+    modified: 1616717677628
+    created: 1616364999430
+    url: http://localhost:3333/projetos
+    name: Index
+    description: |-2
+       > Esta rota retorna todos os Projetos.
+       
+        ## Estrutura da rota: ##
+        ### ** projetos/ ** ##
+        #### - Ex: ####
+            - projetos/index/
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616364999503
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_28c9d31e596f4f82b622077d53fce2c6
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616364903583
+    created: 1616364903583
+    name: Projetos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1616364903583
+    _type: request_group
+  - _id: wrk_bed1303279a64fb5a643860f411ed2da
+    parentId: null
+    modified: 1616350202757
+    created: 1616350202757
+    name: Teste Nave.rs
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_e3563249b007440781dfd1c878603e95
+    parentId: fld_28c9d31e596f4f82b622077d53fce2c6
+    modified: 1616780511987
+    created: 1616365014154
+    url: http://localhost:3333/projetos/show/1
+    name: Show
+    description: |-2
+       > Esta rota retorna um projeto pelo ID.
+       
+        ## Estrutura da rota: ##
+        ### ** projetos/show/:id ** ##
+        #### - Ex: ####
+            - projetos/show/2
+                  # Retorna um projeto e seus Navers
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616361800232.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee040d1599b54d058345c8f8a7a2911f
+    parentId: fld_28c9d31e596f4f82b622077d53fce2c6
+    modified: 1616780517137
+    created: 1616365033304
+    url: http://localhost:3333/projetos/store
+    name: Store
+    description: |-2
+       > Esta rota cadastra um novo projeto.
+       
+        ## Estrutura da rota: ##
+        ### ** projetos/store/ ** ##
+        #### - Ex: ####
+            - projetos/store/
+                {
+                  "name": "Novo Projeto"
+                }
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	 "name": "Projeto 1"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_f6fe18aa6bc84c2299fec5d13f5f28e9
+    authentication: {}
+    metaSortKey: -1616361800182.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d52cd227f44c480aad733b5d7062fd64
+    parentId: fld_28c9d31e596f4f82b622077d53fce2c6
+    modified: 1616772340546
+    created: 1616365043338
+    url: http://localhost:3333/projetos/update/1
+    name: Update
+    description: |-2
+       > Esta rota permite atualizar um projeto pelo ID.
+       
+        ## Estrutura da rota: ##
+        ### ** projetos/update/:id ** ##
+        #### - Ex: ####
+            - projetos/update/1
+                {
+                  "name": "Projeto 1"
+                }
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	 "name": "Projeto Legal 1"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_44ba815c732b4670a5aa1eec109a389b
+    authentication: {}
+    metaSortKey: -1616361800132.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_281c53bb29784ad7af8a758d4bda71df
+    parentId: fld_28c9d31e596f4f82b622077d53fce2c6
+    modified: 1616787348428
+    created: 1616365057086
+    url: http://localhost:3333/projetos/delete/1
+    name: Delete
+    description: |+2
+       > Esta rota deleta um Projeto existente.
+       
+        ## Estrutura da rota: ##
+        ### ** projetos/delete/:id ** ##
+        #### - Ex: ####
+            - projetos/delete/2
+
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616361800082.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4d9f64f3e6f8402e9b3e4617af29742d
+    parentId: fld_56ab62c076094f088828423b4faa2717
+    modified: 1616780450229
+    created: 1616358487776
+    url: http://localhost:3333/navers/index/
+    name: Index
+    description: >-2
+       > Esta rota retorna varios Navers. Ela é composta por 3 filtros, sendo eles: **"date / data de contratação"**, **"name / nome"** e **"role / cargo"**.
+       
+        ## Estrutura da rota: ##
+        ### ** navers/index/:type?/:value? ** ##
+        #### - Ex: ####
+            - navers/index/  
+                # Não aplica nenhum tipo de filtro
+            - navers/index/date 
+                # Retorna todos os Navers pela data de contratação do mais recente ao mais antigo.
+            - navers/index/name/ciclano%
+                # Retorna todos os Navers com esse nome
+            - navers/index/role/desenvolvedor
+                # Retona todos os Navers com o esse cargo
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616358600962
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_56ab62c076094f088828423b4faa2717
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616358479859
+    created: 1616358479859
+    name: Navers
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1616358479859
+    _type: request_group
+  - _id: req_051f7bcf94f54fb0852d5f90438a7730
+    parentId: fld_56ab62c076094f088828423b4faa2717
+    modified: 1616787327901
+    created: 1616358500185
+    url: http://localhost:3333/navers/show/1
+    name: Show
+    description: |-2
+       > Esta rota retorna apenas um Naver.
+       
+        ## Estrutura da rota: ##
+        ### ** navers/show/:id ** ##
+        #### - Ex: ####
+            - navers/show/1  
+                # Retorna um Naver baseado no ID
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616358600912
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_743882244ba84eddbea28434c5d29454
+    parentId: fld_56ab62c076094f088828423b4faa2717
+    modified: 1616787358029
+    created: 1616358587828
+    url: http://localhost:3333/navers/store
+    name: Store
+    description: |2
+       > Esta rota cadastra um novo Naver.
+       
+        ## Estrutura da rota: ##
+        ### ** navers/store/:id ** ##
+        #### - Ex: ####
+            - navers/store/
+                "naver": {
+                  "name": "Fulano",
+                  "birthdate": "1999-05-15",
+                  "admission_date": "2021-06-02",
+                  "job_role": "Desenvolvedor"
+                },
+                "projetos": [1, 2] 
+                # Um Naver pode estar em varios projetos
+
+                # Caso o Naver não esteja em nenhum projeto: 
+                "naver": {
+                  "name": "Fulano",
+                  "birthdate": "1999-05-15",
+                  "admission_date": "2021-06-02",
+                  "job_role": "Desenvolvedor"
+                }
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"naver": {
+        		"name": "Naver 1",
+        		"birthdate": "1999-05-15",
+        		"admission_date": "2015-01-01",
+        		"job_role": "Desenvolvedor"
+        	},
+        	"projetos": [1]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_72979eb7315349a0a00d8d6404497959
+    authentication: {}
+    metaSortKey: -1616358597618.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_01b7de2acd684b1e8f7b9106c62ccef5
+    parentId: fld_56ab62c076094f088828423b4faa2717
+    modified: 1616787365571
+    created: 1616358594325
+    url: http://localhost:3333/navers/update/1
+    name: Update
+    description: |+2
+       > Esta rota atualiza um Naver existente.
+       
+        ## Estrutura da rota: ##
+        ### ** navers/update/:id ** ##
+        #### - Ex: ####
+            - navers/update/2
+                {
+                  "name": "Ciclano",
+                  "birthdate": "1992-10-28",
+                  "admission_date": "2018-06-12",
+                  "job_role": "Desenvolvedor"
+                }
+
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Naver Atualizado 1",
+        	"birthdate": "1999-05-15",
+        	"admission_date": "2018-01-01",
+        	"job_role": "CEO"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_2e556e62b5d949b9b8424b8ed758d75d
+    authentication: {}
+    metaSortKey: -1616358594325
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8b19657f46354b12b68c30c261c4ce66
+    parentId: fld_56ab62c076094f088828423b4faa2717
+    modified: 1616787362091
+    created: 1616358600861
+    url: http://localhost:3333/navers/delete/1
+    name: Delete
+    description: |+2
+       > Esta rota deleta um Naver existente.
+       
+        ## Estrutura da rota: ##
+        ### ** navers/delete/:id ** ##
+        #### - Ex: ####
+            - navers/delete/2
+
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1616358587778
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_23c8b65f1bd54272adb05565f2dfe329
+    parentId: fld_954bf9f9704b4b6a93b955b2e4a09afc
+    modified: 1616772469783
+    created: 1616350266542
+    url: http://localhost:3333/users/signup
+    name: signup
+    description: |-2
+       > Esta rota cadastra um novo Usuario. O Email deve ser unico.
+       
+        ## Estrutura da rota: ##
+        ### ** users/singup ** ##
+        #### - Ex: ####
+            - users/singup/
+              {
+                "email": "teste@gmail.com",
+                "senha": "12345678"
+              }
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "teste@gmail.com",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e2afc93297594ad1a210472fb845ae31
+    authentication: {}
+    metaSortKey: -1616350266542
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_954bf9f9704b4b6a93b955b2e4a09afc
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616350234218
+    created: 1616350234218
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1616350234219
+    _type: request_group
+  - _id: req_db18a4582da3491f89545830e800935e
+    parentId: fld_954bf9f9704b4b6a93b955b2e4a09afc
+    modified: 1616709886744
+    created: 1616352459868
+    url: http://localhost:3333/users/login
+    name: login
+    description: >-2
+       > Esta rota realiza o login do Usuario, assim, dando acesso a outras rotas.
+       
+        ## Estrutura da rota: ##
+        ### ** users/login ** ##
+        #### - Ex: ####
+            - users/login/  
+                {
+                  "email": "teste@gmail.com",
+                  "senha": "12345678"
+                }
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "teste@gmail.com",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e2afc93297594ad1a210472fb845ae31
+    authentication: {}
+    metaSortKey: -1615675185275
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_e7cbe7e8b755da647aefbd5edda6ada57db193bd
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616350202853
+    created: 1616350202853
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1616350202853
+    _type: environment
+  - _id: jar_e7cbe7e8b755da647aefbd5edda6ada57db193bd
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616787306658
+    created: 1616350202857
+    name: Default Jar
+    cookies:
+      - key: token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0xvZ2dlZCI6IiQyYiQxMCRQdkhmNHdRLnl5RFNkOVdrZFlWcU9PTGJhOUN2OVlsQk16RzkuMUlDcWJ0TmdMWTJGRzBrcSIsImlhdCI6MTYxNjc4NzMwNiwiZXhwIjoxNjE2NzkwOTA2fQ.EJWN-exZgVdV2dr3xLPxTWuISpWM6ulKLB1wYnidMfU
+        expires: 2021-03-26T20:35:06.000Z
+        maxAge: 3600
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2021-03-25T18:49:54.343Z
+        lastAccessed: 2021-03-26T19:35:06.655Z
+        id: "3165018433045197"
+    _type: cookie_jar
+  - _id: spc_9f2b862f5e5240318e1491e39461be77
+    parentId: wrk_bed1303279a64fb5a643860f411ed2da
+    modified: 1616350202771
+    created: 1616350202771
+    fileName: Teste Nave.rs
+    contents: ""
+    contentType: yaml
+    _type: api_spec
