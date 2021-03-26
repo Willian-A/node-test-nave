@@ -11,7 +11,7 @@
   3. Cadastre um novo Projeto na rota Projetos/store.
   4. Cadastre um novo Naver na rota Navers/store.
   * Agora, você tem tudo o que precisa para testar as rotas **Index, Show, Update e Delete**.
-  **_A documentação de cada Rota está no proprio Insomnia, caso tenha algum problema entre em contato._**
+    * **_A documentação de cada Rota está no proprio Insomnia, caso tenha algum problema entre em contato._**
 
 ### Dificuldades 
   Desenvolver o Upadate dos Projetos de cada Naver. Modificar o Projeto em que aquele Naver está foi um problema o qual não consegui solucionar. 
